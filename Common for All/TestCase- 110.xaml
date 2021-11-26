@@ -1,0 +1,345 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1024,4484" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:m="clr-namespace:MainLibrary;assembly=MainLibrary" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>MainLibrary</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Windows.Automation</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="43">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>MainLibrary</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>UIAutomationTypes</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1034,4419.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="formdata" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="992,85.3333333333333" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="TC- 110 Price Verification" />
+    <ui:ReadRange AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="992,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Login" WorkbookPath="testData\TestData1.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Values for login are fetched" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="992,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Values Fetched " Status="Pass" TakeScreenshot="True" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="992,3900.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="958,3776.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap:VirtualizedContainerService.HintSize="916,3684.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="psnl_dta" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <m:Login sap:VirtualizedContainerService.HintSize="874,22" sap2010:WorkflowViewState.IdRef="Login_3" u_name="[CurrentRow.Item(&quot;Username&quot;).ToString]" u_pass="[CurrentRow.Item(&quot;Password&quot;).ToString]" />
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="874,1769.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadRange AddHeaders="True" DataTable="[formdata]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="588.666666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="Details" WorkbookPath="testData\TestData1.xlsx">
+                  <ui:ReadRange.Range>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:ReadRange.Range>
+                </ui:ReadRange>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[formdata]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="588.666666666667,1550.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="554.666666666667,1426.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="ui:GenericValue" Name="checkin_date" />
+                          <Variable x:TypeArguments="x:String" Name="temp_s_date" />
+                          <Variable x:TypeArguments="ui:GenericValue" Name="checkout_date" />
+                          <Variable x:TypeArguments="x:String" Name="temp_checkout_date" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[CurrentRow.Item(&quot;Test Case Number&quot;).ToString.Equals(&quot;TC-110&quot;)]" sap:VirtualizedContainerService.HintSize="512.666666666667,1334.66666666667" sap2010:WorkflowViewState.IdRef="If_5">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="476,1150" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="temp_room_type" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Check-in-date" DisplayName="Get Row Item Formatting Checkin date" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[CurrentRow]">
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[checkin_date]</OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:FormatValue DisplayName="Format Value" sap:VirtualizedContainerService.HintSize="434,58.6666666666667" sap2010:WorkflowViewState.IdRef="FormatValue_7" Value="[checkin_date]">
+                                <ui:FormatValue.Format>
+                                  <ui:DateTimeFormatProvider Pattern="dd/MM/yyyy" />
+                                </ui:FormatValue.Format>
+                              </ui:FormatValue>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[temp_s_date]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[checkin_date.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Checkout date" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="434,190" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[CurrentRow]">
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[checkout_date]</OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:FormatValue DisplayName="Format Value" sap:VirtualizedContainerService.HintSize="434,58.6666666666667" sap2010:WorkflowViewState.IdRef="FormatValue_8" Value="[checkout_date]">
+                                <ui:FormatValue.Format>
+                                  <ui:DateTimeFormatProvider Pattern="dd/MM/yyyy" />
+                                </ui:FormatValue.Format>
+                              </ui:FormatValue>
+                              <Assign sap:VirtualizedContainerService.HintSize="434,62" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[temp_checkout_date]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[checkout_date.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Form Data Fetched Successfuly" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="434,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_11" Name="Data for form fetched" Status="Pass" TakeScreenshot="True" />
+                              <m:FormDataWorkflow sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="FormDataWorkflow_6" adultsPer_room="[CurrentRow.Item(&quot;No-of adults&quot;).ToString]" check_in="[temp_s_date]" check_out="[temp_checkout_date]" childper_room="[CurrentRow.Item(&quot;No-of children&quot;).ToString]" hotel_name="[CurrentRow.item(&quot;Hotel&quot;).ToString]" no_rooms="[CurrentRow.Item(&quot;No-of-rooms&quot;).ToString]" room_type="[CurrentRow.Item(&quot;Room Type&quot;).ToString]" set_location="[CurrentRow.Item(&quot;Location&quot;).ToString]" />
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+              <m:ConfirmForm3 sap:VirtualizedContainerService.HintSize="874,22" sap2010:WorkflowViewState.IdRef="ConfirmForm3_1" />
+              <ui:ReadRange AddHeaders="True" DataTable="[psnl_dta]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="874,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="Personal" WorkbookPath="testData\TestData1.xlsx">
+                <ui:ReadRange.Range>
+                  <InArgument x:TypeArguments="x:String">
+                    <Literal x:TypeArguments="x:String" Value="" />
+                  </InArgument>
+                </ui:ReadRange.Range>
+              </ui:ReadRange>
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[psnl_dta]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="874,300" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                <ui:ForEachRow.Body>
+                  <ActivityAction x:TypeArguments="sd:DataRow">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="242,176" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <m:ConfirmForm4 Address="[CurrentRow.Item(&quot;Billing Address&quot;).ToString]" Credicard_type="[CurrentRow.Item(&quot;CC type&quot;).ToString]" CreditCard_no="[CurrentRow.Item(&quot;CC number&quot;).ToString]" Cvv_Number="[CurrentRow.Item(&quot;CVV&quot;).ToString]" First_Name="[CurrentRow.Item(&quot;First Name&quot;).ToString]" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="ConfirmForm4_1" Last_Name="[CurrentRow.Item(&quot;Last Name&quot;).ToString]" Select_expiryYear="[CurrentRow.Item(&quot;CC ex y&quot;).ToString]" select_expiryMonth="[CurrentRow.Item(&quot;CC ex M&quot;).ToString]" />
+                      <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                    </Sequence>
+                  </ActivityAction>
+                </ui:ForEachRow.Body>
+              </ui:ForEachRow>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Adactin.com - Hotel Booking Confirmation" sap:VirtualizedContainerService.HintSize="874,1192.66666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,974.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                      <Sequence.Variables>
+                        <Variable x:TypeArguments="x:String" Name="Tot_fetched_price" />
+                        <Variable x:TypeArguments="x:String" Name="no_nights" />
+                        <Variable x:TypeArguments="x:String" Name="SortedFetchedPriceV" />
+                      </Sequence.Variables>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NGetText DisplayName="Get Text 'Total Price'" sap:VirtualizedContainerService.HintSize="798,158" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                        <uix:NGetText.Target>
+                          <uix:TargetAnchorable BrowserURL="http://adactinhotelapp.com/BookingConfirm.php" DesignTimeRectangle="245, 720, 386, 44" ElementType="InputBox" FriendlyName="'AUD $ 135'" FullSelectorArgument="&lt;webctrl id='total_price' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='total_price' tag='INPUT' type='text' aaname='' /&gt;" Guid="25b3bd36-e560-4f4b-9a2e-5e448ecf0d31" InformativeScreenshot="c0073e8c12a2b57a742a8d910d23de80.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation' /&gt;" SearchSteps="FuzzySelector">
+                            <uix:TargetAnchorable.Anchors>
+                              <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                <uix:Target DesignTimeRectangle="11, 717, 231, 50" ElementType="Text" FriendlyName="'Total Price'" FullSelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='12' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='Total Price  ' check:text='Total Price' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAA2CAYAAAAmqm4kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAXhSURBVHhe7Zu7Sx1LHMfvH2CTKpWdWNkExUZFUDCgoqCIRFADJohiJVgovgoLBQvBQhPSCNoIgsZAMBgbG1GMifh+Ib7x1VrO3e/szLLnuOtZ9RzvbO534IP3nvnt7Ozc32dndnbvP7oIq9zd3Ynb21tCiIEoVSkrIaajVKWshJiOUpWyEmI6SlXKSojpKFUpKyGmo1SlrISYjlKVshJiOkpVykqI6ShVKSshpqNUpayEmI5SlbISYjpKVcpKiOkoVSkrIaajVKWshJiOUpWyEmI6SlXKSojpKFUpKyGmo1SlrISYjlKVspLEcHZ2Jt6/fy/S0tLE4uKiZwwJhlKVsprO3t6eyMvLw3+wwEASyOLV3kvxVFk/ffrkeU0ZGRmis7NTbG5ueh73EN+/f5dtYBwxnl4xJmP13S6U1WxeQtZEzILxllWTkpIivn375nmsH5SV/KfopMZfr/rHYKKs7uu6ubkRW1tboqurSyQlJYmcnByxvr4ecdzfjBQVhbKGk/+TrJrLy0vR3Nws68fGxu7V/63AU1koaziJJev5+bkYGRkRubm5Mu7Vq1eivLxczMzMyJlKx0EkCIWYaNyiHR8fi/b2djmroS3UY5ZD+/39/eLk5MRpEyRCVq963X+cC32YmpoSRUVFsm962euOQb+i2/z9+7dobGyUS2y0jb/19fVy+YwbRKxYPEvv7+9HxMUT6zx2oazh5KGkRtLW1dXJ+miQxH19fU4SBpU11rNzRUWFODg4cPrw0rKWlpaKDx8+RPQplqy4aeGGlpycHHGcJrrv09PTvrGFhYVie3vbiY0nVvt2oazhxC+pkYADAwOyrri4WCbb9fW1lHNiYkImIBIOs4Y+5qliod2lpSU5Y+N87qVpImTFTaimpka8fv1azM7Oyt+0iDjmzZs38hovLi4ijtMx0bLq3zEew8PDzuoAMWgfS25cH37D3/T0dCdWt4Pd6aamJnn+np6eiFVLvLDatgtlDSd+Sb27uyvy8/NlYq2srETUASQzZteGhgYnqZ8qlga7s+hLR0eH81s8ZcWNZnl5WdTW1so6t3RaOMysOzs7zjFuvGSFVG1tbbI93Nwekgx1EBHjNjo6eq8ewuJxAOOO8Y+ufy5WH+1CWcOJn6xzc3Ny5nHL6AYJjcRyv8YIKhZm0oWFBdHb2yvKysoinl9Ba2urE/tcWf0oKCgQf/78ceK9RIzGK+bo6EhUVlYG6p+Ozc7OFhsbG/fqMc4Y78dea1Cs67YLZQ0nfrLqd4pucdycnp6K6urqiMQKIhY2UPyegzWJkhUzGmatz58/39vIQts4x2Nl1c/g7puWH7Ge1zXo548fPzzbeA5W23ahrOHkJWW9urqSS1y0i+fCoaEhsba2JjeUMNt6nfO5skZflx8myQrcewHxwmrXLpQ1nPgldSKWwZASy0+/5+Awynp4eChKSkpEZmZmxLLaCx2LcfN7Lk4k8FQWyhpO/JJabzD5SeK1wYR3sljiQnLIHn1MrFlIbzCFSVasFlpaWuS5gmwwYTMK4zM5OekZk0isPtqFsoYTv6RGYulXN5gNkaixXt0AvczF64ro50L8e1VVlZQcbeuEx4w7ODjofCAQJlnBz58/5VgEeXUzPz8vUlNT5bXimnHT0oJj5v369av4+PGjEx9PrPGwC2UNJw8lNZIu6EcRGp247li3aH4fBGA3+N27d/KfwyYrZPvy5UvEjrYbd98ROz4+7jkGmsdea1Cstu1CWcNJrKQO+rmhBr9BSP2pHsBXOb9+/XLqsdP59u1b2R6SFktpfH4XxmdWDa4Lr6O8PjfEWGFV4o5fXV2VS2L8L3uIBVlZWaK7u1u2Ex0fD6xz2IWyEmI2SlXKSojpKFUpKyGmo1SlrISYjlKVshJiOkpVykqI6ShVKSshpqNUpayEmI5SlbISYjpKVcpKiOkoVSkrIaajVKWshJiOUpWyEmI6SlXKSojpKFUpKyGmo1SlrISYjlKVshJiOkpVykqI2dyKfwHMh1T8XhK9/AAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                              </scg:List>
+                            </uix:TargetAnchorable.Anchors>
+                          </uix:TargetAnchorable>
+                        </uix:NGetText.Target>
+                        <uix:NGetText.Text>
+                          <OutArgument x:TypeArguments="x:String">[Tot_fetched_price]</OutArgument>
+                        </uix:NGetText.Text>
+                      </uix:NGetText>
+                      <Assign sap:VirtualizedContainerService.HintSize="798,62" sap2010:WorkflowViewState.IdRef="Assign_11">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[SortedFetchedPriceV]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">AUD $ 250</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <If Condition="[Tot_fetched_price.Equals(SortedFetchedPriceV)]" sap:VirtualizedContainerService.HintSize="798,518" sap2010:WorkflowViewState.IdRef="If_6">
+                        <If.Then>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,353.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_35">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;Fetched price is equal to expected price i.e. 250$ &quot;]" />
+                            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Price fetched is equal to expected price" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_12" Name="Success" Status="Pass" TakeScreenshot="True" />
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence sap:VirtualizedContainerService.HintSize="376,354.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_36">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_6" Text="[&quot;Fetched price is different from expected price &quot;+ &quot;Fetched price = &quot;+Tot_fetched_price +&quot; And Expected Price = &quot;+SortedFetchedPriceV]" />
+                            <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Price is Different from expected Price" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_13" Name="Failed" Status="Fail" TakeScreenshot="True" />
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                      <m:Logout sap:VirtualizedContainerService.HintSize="798,22" sap2010:WorkflowViewState.IdRef="Logout_1" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1fa7f012d1e33c9cb4d323110db2296f.png" Selector="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation'/&gt;" Url="http://adactinhotelapp.com/BookingConfirm.php" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

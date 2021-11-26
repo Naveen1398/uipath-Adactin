@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="http://adactinhotelapp.com/SearchHotel.php" ContentHash="ARhItZddCUCdfnA3Cmsogg" DesignTimeRectangle="245, 607, 375, 38" ElementType="DropDown" FriendlyName="'- Select Room Type -'" FullSelectorArgument="&lt;webctrl id='room_type' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='room_type' tag='SELECT' type='' aaname='' /&gt;" Guid="5e929c6c-acf4-471d-baca-8505efe92c1f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Search Hotel' /&gt;" SearchSteps="FuzzySelector" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="11, 604, 231, 44" ElementType="Text" FriendlyName="'Room Type'" FullSelectorArgument="&lt;webctrl parentid='search_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='search_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='Room Type ' check:text='Room Type' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">02xSMOjG5DEmcG5qJfnKKkQ</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="InformativeScreenshot" originalValue="886adb54ad05be260cc5d11bae61b1fb.png" xmlns="">05S74szBAH0qSOd8kbmIDeA</imageRef>
+</TargetAnchorable>

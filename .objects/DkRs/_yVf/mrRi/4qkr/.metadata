@@ -1,0 +1,13 @@
+﻿{
+  "Id": "4qkrcsrJh0Wz42_HPslZlQ",
+  "Reference": "teuCrv8OE0KFLfaE18X9fQ/4qkrcsrJh0Wz42_HPslZlQ",
+  "ParentRef": "teuCrv8OE0KFLfaE18X9fQ/mrRiUT6zZEutiI3Dm8xdiQ",
+  "Name": "Room Type",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Created": "2021-11-22T06:00:19.0396627Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-22T06:00:19.0396627Z"
+}

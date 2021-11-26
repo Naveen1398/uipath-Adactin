@@ -1,0 +1,402 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1296.66666666667,5102" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:m="clr-namespace:MainLibrary;assembly=MainLibrary" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:ra="clr-namespace:ReporterForUiPath.Activities;assembly=ReporterForUiPath.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="52">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>MainLibrary</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities.Business</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+      <x:String>UiPath.DataTableUtilities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>ReporterForUiPath.Activities</x:String>
+      <x:String>ReporterForUiPath.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Windows.Automation</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="43">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>MainLibrary</AssemblyReference>
+      <AssemblyReference>System.Text.Encoding.CodePages</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath.Activities</AssemblyReference>
+      <AssemblyReference>ReporterForUiPath</AssemblyReference>
+      <AssemblyReference>UIAutomationTypes</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="1306.66666666667,5037.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="sd:DataTable" Name="dataTable" />
+      <Variable x:TypeArguments="sd:DataTable" Name="formdata" />
+      <Variable x:TypeArguments="x:String" Name="LocationT" />
+      <Variable x:TypeArguments="x:String" Name="HotelNameT" />
+      <Variable x:TypeArguments="x:String" Name="RoomtypeT" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ra:StartTest ContinueOnError="{x:Null}" TagName="{x:Null}" TestDescription="{x:Null}" testList="{x:Null}" DisplayName="Start Test" sap:VirtualizedContainerService.HintSize="1264.66666666667,85.3333333333333" sap2010:WorkflowViewState.IdRef="StartTest_1" Priority="Low" TestName="TC- 111 Data Should be same in form" />
+    <ui:ReadRange AddHeaders="True" DataTable="[dataTable]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1264.66666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Login" WorkbookPath="testData\TestData1.xlsx">
+      <ui:ReadRange.Range>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ui:ReadRange.Range>
+    </ui:ReadRange>
+    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Values for login are fetched" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="1264.66666666667,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_1" Name="Values Fetched " Status="Pass" TakeScreenshot="True" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dataTable]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1264.66666666667,4518.66666666667" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+      <ui:ForEachRow.Body>
+        <ActivityAction x:TypeArguments="sd:DataRow">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="1230.66666666667,4394.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_7">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap:VirtualizedContainerService.HintSize="1188.66666666667,4302.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_24">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="sd:DataTable" Name="psnl_dta" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <m:Login sap:VirtualizedContainerService.HintSize="1146.66666666667,22" sap2010:WorkflowViewState.IdRef="Login_3" u_name="[CurrentRow.Item(&quot;Username&quot;).ToString]" u_pass="[CurrentRow.Item(&quot;Password&quot;).ToString]" />
+              <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1146.66666666667,4148.66666666667" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <ui:ReadRange AddHeaders="True" DataTable="[formdata]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="1104.66666666667,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="Details" WorkbookPath="testData\TestData1.xlsx">
+                  <ui:ReadRange.Range>
+                    <InArgument x:TypeArguments="x:String">
+                      <Literal x:TypeArguments="x:String" Value="" />
+                    </InArgument>
+                  </ui:ReadRange.Range>
+                </ui:ReadRange>
+                <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[formdata]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="1104.66666666667,3930" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                  <ui:ForEachRow.Body>
+                    <ActivityAction x:TypeArguments="sd:DataRow">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                      </ActivityAction.Argument>
+                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1070.66666666667,3806" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                        <Sequence.Variables>
+                          <Variable x:TypeArguments="ui:GenericValue" Name="checkin_date" />
+                          <Variable x:TypeArguments="x:String" Name="temp_s_date" />
+                          <Variable x:TypeArguments="ui:GenericValue" Name="checkout_date" />
+                          <Variable x:TypeArguments="x:String" Name="temp_checkout_date" />
+                        </Sequence.Variables>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If Condition="[CurrentRow.Item(&quot;Test Case Number&quot;).ToString.Equals(&quot;TC-111&quot;)]" sap:VirtualizedContainerService.HintSize="1028.66666666667,3714" sap2010:WorkflowViewState.IdRef="If_5">
+                          <If.Then>
+                            <Sequence sap:VirtualizedContainerService.HintSize="992,3529.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                              <Sequence.Variables>
+                                <Variable x:TypeArguments="x:String" Name="temp_room_type" />
+                              </Sequence.Variables>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Check-in-date" DisplayName="Get Row Item Formatting Checkin date" sap:VirtualizedContainerService.HintSize="950,190" sap2010:WorkflowViewState.IdRef="GetRowItem_7" Row="[CurrentRow]">
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[checkin_date]</OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:FormatValue DisplayName="Format Value" sap:VirtualizedContainerService.HintSize="950,58.6666666666667" sap2010:WorkflowViewState.IdRef="FormatValue_7" Value="[checkin_date]">
+                                <ui:FormatValue.Format>
+                                  <ui:DateTimeFormatProvider Pattern="dd/MM/yyyy" />
+                                </ui:FormatValue.Format>
+                              </ui:FormatValue>
+                              <Assign sap:VirtualizedContainerService.HintSize="950,62" sap2010:WorkflowViewState.IdRef="Assign_7">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[temp_s_date]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[checkin_date.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ui:GetRowItem Column="{x:Null}" ColumnIndex="{x:Null}" ColumnName="Checkout date" DisplayName="Get Row Item" sap:VirtualizedContainerService.HintSize="950,190" sap2010:WorkflowViewState.IdRef="GetRowItem_8" Row="[CurrentRow]">
+                                <ui:GetRowItem.Value>
+                                  <OutArgument x:TypeArguments="ui:GenericValue">[checkout_date]</OutArgument>
+                                </ui:GetRowItem.Value>
+                              </ui:GetRowItem>
+                              <ui:FormatValue DisplayName="Format Value" sap:VirtualizedContainerService.HintSize="950,58.6666666666667" sap2010:WorkflowViewState.IdRef="FormatValue_8" Value="[checkout_date]">
+                                <ui:FormatValue.Format>
+                                  <ui:DateTimeFormatProvider Pattern="dd/MM/yyyy" />
+                                </ui:FormatValue.Format>
+                              </ui:FormatValue>
+                              <Assign sap:VirtualizedContainerService.HintSize="950,62" sap2010:WorkflowViewState.IdRef="Assign_8">
+                                <Assign.To>
+                                  <OutArgument x:TypeArguments="x:String">[temp_checkout_date]</OutArgument>
+                                </Assign.To>
+                                <Assign.Value>
+                                  <InArgument x:TypeArguments="x:String">[checkout_date.ToString]</InArgument>
+                                </Assign.Value>
+                              </Assign>
+                              <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="Form is filled withdata" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="950,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_11" Name="Form Data Updated Successfully" Status="Pass" TakeScreenshot="True" />
+                              <m:FormDataWorkflow sap:VirtualizedContainerService.HintSize="950,22" sap2010:WorkflowViewState.IdRef="FormDataWorkflow_6" adultsPer_room="[CurrentRow.Item(&quot;No-of adults&quot;).ToString]" check_in="[temp_s_date]" check_out="[temp_checkout_date]" childper_room="[CurrentRow.Item(&quot;No-of children&quot;).ToString]" hotel_name="[CurrentRow.item(&quot;Hotel&quot;).ToString]" no_rooms="[CurrentRow.Item(&quot;No-of-rooms&quot;).ToString]" room_type="[CurrentRow.Item(&quot;Room Type&quot;).ToString]" set_location="[CurrentRow.Item(&quot;Location&quot;).ToString]" />
+                              <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="950,160.666666666667" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+                                <ui:MultipleAssign.AssignOperations>
+                                  <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[LocationT]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Location").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[HotelNameT]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.item("Hotel").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                    <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                                      <ui:AssignOperation.To>
+                                        <OutArgument x:TypeArguments="x:String">[RoomtypeT]</OutArgument>
+                                      </ui:AssignOperation.To>
+                                      <ui:AssignOperation.Value>
+                                        <InArgument x:TypeArguments="x:String">[CurrentRow.Item("Room Type").ToString]</InArgument>
+                                      </ui:AssignOperation.Value>
+                                    </ui:AssignOperation>
+                                  </scg:List>
+                                </ui:MultipleAssign.AssignOperations>
+                              </ui:MultipleAssign>
+                              <m:ConfirmForm3 sap:VirtualizedContainerService.HintSize="950,22" sap2010:WorkflowViewState.IdRef="ConfirmForm3_1" />
+                              <ui:ReadRange AddHeaders="True" DataTable="[psnl_dta]" DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="950,86.6666666666667" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="Personal" WorkbookPath="testData\TestData1.xlsx">
+                                <ui:ReadRange.Range>
+                                  <InArgument x:TypeArguments="x:String">
+                                    <Literal x:TypeArguments="x:String" Value="" />
+                                  </InArgument>
+                                </ui:ReadRange.Range>
+                              </ui:ReadRange>
+                              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[psnl_dta]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="950,1950" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                                <ui:ForEachRow.Body>
+                                  <ActivityAction x:TypeArguments="sd:DataRow">
+                                    <ActivityAction.Argument>
+                                      <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
+                                    </ActivityAction.Argument>
+                                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="916,1826" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                      <m:ConfirmForm4 Address="[CurrentRow.Item(&quot;Billing Address&quot;).ToString]" Credicard_type="[CurrentRow.Item(&quot;CC type&quot;).ToString]" CreditCard_no="[CurrentRow.Item(&quot;CC number&quot;).ToString]" Cvv_Number="[CurrentRow.Item(&quot;CVV&quot;).ToString]" First_Name="[CurrentRow.Item(&quot;First Name&quot;).ToString]" sap:VirtualizedContainerService.HintSize="874,22" sap2010:WorkflowViewState.IdRef="ConfirmForm4_1" Last_Name="[CurrentRow.Item(&quot;Last Name&quot;).ToString]" Select_expiryYear="[CurrentRow.Item(&quot;CC ex y&quot;).ToString]" select_expiryMonth="[CurrentRow.Item(&quot;CC ex M&quot;).ToString]" />
+                                      <Delay Duration="00:00:08" sap:VirtualizedContainerService.HintSize="874,22" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Adactin.com - Hotel Booking Confirmation" sap:VirtualizedContainerService.HintSize="874,1610" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" OpenMode="Never" ScopeGuid="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                                        <uix:NApplicationCard.Body>
+                                          <ActivityAction x:TypeArguments="x:Object">
+                                            <ActivityAction.Argument>
+                                              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                            </ActivityAction.Argument>
+                                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="840,1392" sap2010:WorkflowViewState.IdRef="Sequence_34">
+                                              <Sequence.Variables>
+                                                <Variable x:TypeArguments="x:String" Name="Tot_fetched_price" />
+                                                <Variable x:TypeArguments="x:String" Name="no_nights" />
+                                                <Variable x:TypeArguments="x:String" Name="SortedFetchedPriceV" />
+                                                <Variable x:TypeArguments="x:String" Name="Hotel_nameC" />
+                                                <Variable x:TypeArguments="x:String" Name="LocationC" />
+                                                <Variable x:TypeArguments="x:String" Name="RoomtypteC" />
+                                              </Sequence.Variables>
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <uix:NGetText DisplayName="Get Text 'Hotel Name'" sap:VirtualizedContainerService.HintSize="798,158" sap2010:WorkflowViewState.IdRef="NGetText_7" ScopeIdentifier="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="http://adactinhotelapp.com/BookingConfirm.php" DesignTimeRectangle="245, 468, 386, 44" ElementType="InputBox" FriendlyName="'Hotel Creek'" FullSelectorArgument="&lt;webctrl id='hotel_name' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='hotel_name' tag='INPUT' type='text' aaname='' /&gt;" Guid="c40582ae-b352-4194-8d9b-110493baa135" InformativeScreenshot="1493ad620aeec33ab9c5ad5c87f4beb0.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation' /&gt;" SearchSteps="FuzzySelector">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target DesignTimeRectangle="11, 465, 231, 50" ElementType="Text" FriendlyName="'Hotel Name'" FullSelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl tableRow='2' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl type='' tag='TD' aaname='Hotel Name ' check:text='Hotel Name' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                                <uix:NGetText.Text>
+                                                  <OutArgument x:TypeArguments="x:String">[Hotel_nameC]</OutArgument>
+                                                </uix:NGetText.Text>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Location'" sap:VirtualizedContainerService.HintSize="798,158" sap2010:WorkflowViewState.IdRef="NGetText_8" ScopeIdentifier="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="http://adactinhotelapp.com/BookingConfirm.php" DesignTimeRectangle="245, 518, 386, 44" ElementType="InputBox" FriendlyName="'Sydney'" FullSelectorArgument="&lt;webctrl id='location' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='location' tag='INPUT' type='text' aaname='' /&gt;" Guid="e39e5b49-b083-456e-b570-eb58a1a0ed39" InformativeScreenshot="bdc382ae48e5a94cd6c81614cf962554.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation' /&gt;" SearchSteps="FuzzySelector">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target DesignTimeRectangle="11, 515, 231, 50" ElementType="Text" FriendlyName="'Location'" FullSelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='3' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='Location ' check:text='Location' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOsAAAA2CAYAAAAmqm4kAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAUJSURBVHhe7ZrLK3ZBHMffP8DGysqKlaRE2ShFFNnIxiWXslI2lFyKhbIgCSsWFhbKhpUSYSHKZeGW5JJSbrltLed9vr9n5uk8Y3je83jLeN/v1CeZ+c2c89TvM2fmnPllioqUt7c39fr6SgjxEK0qZSXEd7SqlJUQ39GqUlZCfEerSlkJ8R2tKmUlxHe0qpSVEN/RqlJWQnxHq0pZCfEdrSplJcR3tKqUlRDf0apSVkJ8R6tKWQnxHa0qZSXEd7SqlJUQ39GqUlZCfEerSlkJ8R2tKmUlxHe0qpSVEN/RqlJWQnxHq0pZiZupqSkkifx1tf90zO9rbm5Wd3d3zhhfEFFRKCtx8dNl7enpkftfWlpytlNW8s/wr8v6kxBRUSgrcUFZ/UFERaGsxEUyst7c3KiRkRGVl5cnfdPT01VTU5Pa3d11xoPz83PV39+vcnJyYn1qa2vV/Px8bHn68PCgxsfHVWlpqbQjDuTn50tfjGHGu7y8VMXFxbEYGyMv/uJ/SG36Gu7v79XMzIwqKiqSmNTUVFVdXa2Wl5fVy8tLXCzuEUvp7Oxs+Z3b29uqsbFR+oD6+nq1t7cX1ycskXuIFspKXISV9ezsTFVUVEgfGwiG5LcTHcmPJHf1AUYsI4QrBhQWFqrDw0OJ/aqsmHBaWlre9QMpKSlqaGhIPT4+xuLNvWVkZIiYiLH7YfL6irCRMaKFshIXYWRF8nZ0dEg8Ev3k5ETERCJPTk6KrHbCQu7y8nJJ7oGBAXV1dSX1eIpubW2p7u5utbKyEou3wfi4Tltbm1x3cHAwrj3RMtglK8YcGxuT+srKSnlSPj8/y+/Dkx4TC35LcMzgRJKZmamGh4djv+X09FSesmgbHR2N9QlLpH+0UFbiIoysSGokMhLcJKohKEBQKDM+JA8+qcKys7OjsrKyZJLA8tXUJyPrxcWFKikpkYllf38/Lh5AWEwura2tMqmgLvhkXVtbe9dncXFRrmPfXxgi/aOFshIXYWSdnZ2VWPvpZjBCIamR3E9PT6q9vV0S/yOZbCD98fGxmpiYUHV1dbKfDO5fzdgmPhlZ19fXVVpaWpyMQbA3xnWxzMZyG3VGVrNntfuYicy+vzBE7jNaKCtxEUbWRLF2kidKcBvE9/b2OveDhr8hq6suyO3trWpoaIi7b8pKvh2fZDXjY0+IpzeWqFhuY/n8kQyUlfw3hJE17DIYS0wsNbHkxNLT1ceAfR72e4hdXV191/43ZeUymPxIwshqEhJvd/GWN9j20Qsm7D1Rl+gFUyIZ7InA1Pf19cn4mEiC8QaXrOYF00fX+uwFE2Ul30YYWYOfbvCp4k8+3RwcHKiCgoKEn27wMqqzs1PG7urqUtfX1xKH76Fzc3MqNzdX2mwZpqenpR4vo4KHJgwuWYMTS1lZmYj2p59uKCv5NoysnxFM0GQOReCzBvahrj7ASIFTQeZUVBCIXlVVJZ9NbBnMZGD3MWO6ZAXJHoqgrOTbCCsrSOa44dHRkbzptY8bLiwsxH2XxFO5pqZGhDHH+DY2Nj6VYXNzU+IQj7FxPNHskT+SFXzluGGwDVBWQv4jtKqUlRDf0apSVkJ8R6tKWQnxHa0qZSXEd7SqlJUQ39GqUlZCfEerSlkJ8R2tKmUlxHe0qpSVEN/RqlJWQnxHq0pZCfEdrSplJcR3tKqUlRDf0apSVkJ8R6tKWQnxHa0qZSXEd7SqlJUQv3lVvwF1Fj5s8r+AUgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                                <uix:NGetText.Text>
+                                                  <OutArgument x:TypeArguments="x:String">[LocationC]</OutArgument>
+                                                </uix:NGetText.Text>
+                                              </uix:NGetText>
+                                              <uix:NGetText DisplayName="Get Text 'Room Type'" sap:VirtualizedContainerService.HintSize="798,158" sap2010:WorkflowViewState.IdRef="NGetText_9" ScopeIdentifier="c9f34858-9be9-42d4-9cf2-76977f710091" Version="V1">
+                                                <uix:NGetText.Target>
+                                                  <uix:TargetAnchorable BrowserURL="http://adactinhotelapp.com/BookingConfirm.php" DesignTimeRectangle="245, 567, 386, 44" ElementType="InputBox" FriendlyName="'Deluxe'" FullSelectorArgument="&lt;webctrl id='room_type' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='room_type' tag='INPUT' type='text' aaname='' /&gt;" Guid="fbffd81e-20a3-4d4e-976c-90277b30095c" InformativeScreenshot="97cafc8bf5566ebe3d22281fe51a207d.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation' /&gt;" SearchSteps="FuzzySelector">
+                                                    <uix:TargetAnchorable.Anchors>
+                                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                        <uix:Target DesignTimeRectangle="11, 564, 231, 50" ElementType="Text" FriendlyName="'Room Type'" FullSelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='4' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='booking_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='Room Type  ' check:text='Room Type' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image" />
+                                                      </scg:List>
+                                                    </uix:TargetAnchorable.Anchors>
+                                                  </uix:TargetAnchorable>
+                                                </uix:NGetText.Target>
+                                                <uix:NGetText.Text>
+                                                  <OutArgument x:TypeArguments="x:String">[RoomtypteC]</OutArgument>
+                                                </uix:NGetText.Text>
+                                              </uix:NGetText>
+                                              <If Condition="[Hotel_nameC.Equals(HotelNameT) AndAlso LocationT.Equals(LocationC) AndAlso RoomtypteC.Equals(RoomtypeT)]" sap:VirtualizedContainerService.HintSize="798,518" sap2010:WorkflowViewState.IdRef="If_7">
+                                                <If.Then>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,353.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_37">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:04" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_7" Text="[&quot;All the data Fetched SuccessFully Location is &quot;+LocationT+&quot; and HotelName is &quot;+HotelNameT+&quot;Room type is &quot;+ RoomtypeT]" />
+                                                    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="[&quot;All the data Fetched SuccessFully Location is &quot;+LocationT+&quot; and HotelName is &quot;+HotelNameT+&quot;Room type is &quot;+ RoomtypeT]" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_12" Name="Data Fetched Successfully" Status="Pass" TakeScreenshot="True" />
+                                                  </Sequence>
+                                                </If.Then>
+                                                <If.Else>
+                                                  <Sequence sap:VirtualizedContainerService.HintSize="376,354.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                                    <sap:WorkflowViewStateService.ViewState>
+                                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                      </scg:Dictionary>
+                                                    </sap:WorkflowViewStateService.ViewState>
+                                                    <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:03" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="334,85.3333333333333" sap2010:WorkflowViewState.IdRef="MessageBox_8" Text="[&quot;the room type typed in was &quot;+RoomtypeT+&quot; But room Type Displyed is &quot;+RoomtypteC+&quot; which is Wrong&quot;]" />
+                                                    <ra:StepStatus ActualResult="{x:Null}" CodeBlock="{x:Null}" ContinueOnError="{x:Null}" ExpectedResult="{x:Null}" statusInfo="{x:Null}" Description="[&quot;the room type typed in was &quot;+RoomtypeT+&quot; But room Type Displyed is &quot;+RoomtypteC+&quot; which is Wrong&quot;]" DisplayName="Step Status" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="StepStatus_13" Name="Data is different" Status="Fail" TakeScreenshot="True" />
+                                                  </Sequence>
+                                                </If.Else>
+                                              </If>
+                                              <m:LogoutATLast sap:VirtualizedContainerService.HintSize="798,22" sap2010:WorkflowViewState.IdRef="LogoutATLast_2" />
+                                              <uix:NNavigateBrowser Action="CloseTab" DisplayName="Navigate Browser - Close Tab" sap:VirtualizedContainerService.HintSize="798,83.3333333333333" sap2010:WorkflowViewState.IdRef="NNavigateBrowser_1" Version="V1" />
+                                            </Sequence>
+                                          </ActivityAction>
+                                        </uix:NApplicationCard.Body>
+                                        <uix:NApplicationCard.TargetApp>
+                                          <uix:TargetApp Area="-11, -11, 1942, 1030" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="1fa7f012d1e33c9cb4d323110db2296f.png" Selector="&lt;html app='chrome.exe' title='Adactin.com - Hotel Booking Confirmation'/&gt;" Url="http://adactinhotelapp.com/BookingConfirm.php" />
+                                        </uix:NApplicationCard.TargetApp>
+                                      </uix:NApplicationCard>
+                                    </Sequence>
+                                  </ActivityAction>
+                                </ui:ForEachRow.Body>
+                              </ui:ForEachRow>
+                            </Sequence>
+                          </If.Then>
+                          <If.Else>
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_21">
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </Sequence>
+                          </If.Else>
+                        </If>
+                      </Sequence>
+                    </ActivityAction>
+                  </ui:ForEachRow.Body>
+                </ui:ForEachRow>
+              </Sequence>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachRow.Body>
+    </ui:ForEachRow>
+  </Sequence>
+</Activity>

@@ -1,0 +1,12 @@
+﻿{
+  "Id": "mrRiUT6zZEutiI3Dm8xdiQ",
+  "Reference": "teuCrv8OE0KFLfaE18X9fQ/mrRiUT6zZEutiI3Dm8xdiQ",
+  "ParentRef": "teuCrv8OE0KFLfaE18X9fQ/_yVfSFUfvEibVN5ycIW52w",
+  "Name": "Chrome: Adactin.com - Search Hotel",
+  "Type": "Screen",
+  "Created": "2021-11-22T06:00:18.8013013Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=21.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2021-11-22T06:00:18.8013013Z"
+}

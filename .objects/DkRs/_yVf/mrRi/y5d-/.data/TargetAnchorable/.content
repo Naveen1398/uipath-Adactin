@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-16"?>
+<TargetAnchorable BrowserURL="http://adactinhotelapp.com/SearchHotel.php" ContentHash="fxVyKqcBtUGITnXGGeWlYg" DesignTimeRectangle="245, 842, 375, 38" ElementType="DropDown" FriendlyName="'0 - None'" FullSelectorArgument="&lt;webctrl id='child_room' tag='SELECT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='child_room' tag='SELECT' type='' aaname='' /&gt;" Guid="fe3b88b9-d83b-4a0b-a5f7-ed799bbdbf18" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Adactin.com - Search Hotel' /&gt;" SearchSteps="FuzzySelector" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TargetAnchorable.Anchors>
+    <scg:List x:TypeArguments="ITarget" Capacity="4">
+      <Target DesignTimeRectangle="11, 839, 231, 44" ElementType="Text" FriendlyName="'Children per Room'" FullSelectorArgument="&lt;webctrl parentid='search_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' tableRow='9' tag='TD' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='search_form' tag='TABLE' /&gt;&lt;webctrl isleaf='1' type='' tag='TD' aaname='Children per Room ' check:text='Children per Room' /&gt;" SearchSteps="FuzzySelector, Image">
+        <imageRef attrName="ImageBase64" xmlns="">0WWh9tBODZEOr-yJXVEATTg</imageRef>
+      </Target>
+    </scg:List>
+  </TargetAnchorable.Anchors>
+  <imageRef attrName="InformativeScreenshot" originalValue="639a5489c45bbd142fcf025c08499f7b.png" xmlns="">0nH0S2DFBfkiIP7auh0e1rg</imageRef>
+</TargetAnchorable>
