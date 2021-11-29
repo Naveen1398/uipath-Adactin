@@ -1,7 +1,7 @@
 {
   "name": "AdactinTesting",
   "description": "This is to test the Adacitin hotel booking website",
-  "main": "TestCase- 102.xaml",
+  "main": "MainWorkflow.xaml",
   "dependencies": {
     "MainLibrary": "[1.0.13]",
     "ReporterForUiPath.Activities": "[2.0.0]",
@@ -15,7 +15,7 @@
   "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "21.10.3.0",
-  "projectVersion": "1.0.0",
+  "projectVersion": "1.0.2",
   "runtimeOptions": {
     "autoDispose": false,
     "isPausable": true,
@@ -49,6 +49,12 @@
     {
       "filePath": "TestCase- 102.xaml",
       "uniqueId": "4737a476-64ce-453a-9b70-54c3d18d2c9e",
+      "input": [],
+      "output": []
+    },
+    {
+      "filePath": "MainWorkflow.xaml",
+      "uniqueId": "2b819eb8-10d1-4db6-b168-a95e85f7f2d3",
       "input": [],
       "output": []
     }
