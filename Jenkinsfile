@@ -7,7 +7,7 @@ pipeline {
 	        MINOR = '0'
 	        //Orchestrator Services
 	        UIPATH_ORCH_URL = "https://cloud.uipath.com/testiuslhzpy/portal_"
-			
+		//use your own orchestrator address	
 	        UIPATH_ORCH_LOGICAL_NAME = "testiuslhzpy"
 	        UIPATH_ORCH_TENANT_NAME = "DefaultTenant"
 	        UIPATH_ORCH_FOLDER_NAME = "My Workspace"
