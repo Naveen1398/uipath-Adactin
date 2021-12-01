@@ -1,13 +1,14 @@
 trigger:
- - master
+ - main
 stages:
  - stage: Build
    displayName: Create build artifact
    jobs:
      - job: BuildArtifact
-       pool: TXCHD-LAP-191
+       pool: txchd-lap-191
        steps:
          - script: C:\Users\Naveen Rana\AppData\Local\Programs\UiPath\Studio\UiRobot.exe pack $(Build.SourcesDirectory)\project.json -o $(Build.ArtifactStagingDirectory)\ -v 1.0.$(Build.BuildNumber)
            displayName: "Build the artifact"
          - publish: $(Build.ArtifactStagingDirectory)
             artifact:drop
+  
