@@ -1,6 +1,7 @@
 # Starter pipeline
 
 
+
 trigger:
 - main
 
@@ -15,7 +16,20 @@ steps:
     #echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
 
+- task: UiPathPack@2
+  inputs:
+    versionType: 'AutoVersion'
+    projectJsonPath: 'C:\Users\Naveen Rana\Documents\UiPath\AdactinTesting\project.json'
+    outputType: 'Process'
+    orchestratorConnection: 'uiPath_Azure_Connection'
+    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
 
+- task: UiPathDeploy@2
+  inputs:
+    orchestratorConnection: 'uiPath_Azure_Connection'
+    packagesPath: '$(Build.ArtifactStagingDirectory)\Output'
+    folderName: 'Naveen'
+    entryPoints: 'Main.xaml'
 - task: UiPathRunJob@2
   inputs:
     orchestratorConnection: 'uiPath_Azure_Connection'
