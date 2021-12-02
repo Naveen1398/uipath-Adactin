@@ -1,0 +1,23 @@
+trigger:
+- main
+
+#pool: Default
+  
+stages:
+  - stage: Build
+    displayName: Build Package
+    jobs:
+    - job: BuildPackage
+      pool: Default
+      steps:
+        - task: UiPathRunJob@2
+          inputs:
+            orchestratorConnection: 'uiPath_Azure_Connection'
+            processName: 'Adacitin Hotel Booking'
+            folderName: 'Naveen'
+            jobType: 'TestAutomation'
+            user: 'txchd-lap-191\naveen rana'
+            machine: 'txchd-lap-191'
+
+       
+     
