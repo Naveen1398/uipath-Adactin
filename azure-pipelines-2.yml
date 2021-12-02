@@ -8,7 +8,7 @@ stages:
     displayName: Build Package
     jobs:
     - job: BuildPackage
-      pool: Default
+      pool: TXCHD-LAP-191
       steps:
         - task: UiPathRunJob@2
           inputs:
