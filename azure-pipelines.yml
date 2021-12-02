@@ -1,0 +1,21 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+stages:
+  - stage: Build
+    displayName: Build Package
+    jobs:
+    - job: BuildPackage
+      pool: TXCHD-LAP-191
+      steps:
+      - task: UiPathPack@2
+        inputs:
+          versionType: 'AutoVersion'
+          outputType: 'Process'
+          orchestratorConnection: 'uiPath_Azure_Connection'
+          outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+      - publish: $(Build.ArtifactStagingDirectory)
+        artifact: drop
+  
