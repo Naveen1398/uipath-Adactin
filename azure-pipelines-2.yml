@@ -1,14 +1,14 @@
 trigger:
 - main
 
-#pool: Default
+pool: Default
   
 stages:
   - stage: Build
     displayName: Build Package
     jobs:
     - job: BuildPackage
-      pool: TXCHD-LAP-191
+      #pool: TXCHD-LAP-191
       steps:
         - task: UiPathRunJob@2
           inputs:
