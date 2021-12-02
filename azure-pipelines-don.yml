@@ -1,21 +1,13 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
-
 trigger:
-- main
-
-pool: Default
-steps:
-  
-  - task: UiPathRunJob@2
-    inputs:
-      orchestratorConnection: 'uiPath_Azure_Connection'
-      processName: 'Adacitin Hotel Booking'
-      folderName: 'Naveen'
-      jobType: 'TestAutomation'
-      user: 'txchd-lap-191\naveen rana'
-      machine: 'txchd-lap-191'
-      timeout: '60'
-      failWhenJobFails: false
+ - main
+stages:
+ - stage: Build
+   displayName: Create build artifact
+   jobs:
+     - job: BuildArtifact
+       pool: Default
+       steps:
+         - script: C:\Users\Naveen Rana\AppData\Local\Programs\UiPath\Studio\UiRobot.exe" pack $(Build.SourcesDirectory)\project.json -o $(Build.ArtifactStagingDirectory)\ -v 1.0.$(Build.BuildNumber)
+           displayName: "Build the artifact"
+         - publish: $(Build.ArtifactStagingDirectory)
+            artifact:drop
