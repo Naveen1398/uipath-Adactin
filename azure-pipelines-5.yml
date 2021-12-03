@@ -1,13 +1,14 @@
 trigger:
   - main
 
+pool: Default
 
 stages:
   - stage: Build
     displayName: Build Package
     jobs: 
     - job: BuildPackage
-      pool: Default
+      
       steps:    
       - task: UiPathPack@2
         inputs:
