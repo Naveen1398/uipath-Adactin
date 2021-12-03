@@ -4,8 +4,8 @@
 
 variables:
   # Update this to point to the path to your Project folder (folder containing the project.json).
-  projectPath: 
-    path: 'C:\Users\Naveen Rana\Documents\UiPath\AdactinTesting'
+  projectPath: path
+    
 
 trigger:
   # Update branch triggers here.
