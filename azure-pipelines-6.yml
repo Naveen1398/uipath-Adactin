@@ -4,7 +4,7 @@ trigger:
 - main
 
 pool:
-  Default
+  TXCHD-LAP-191
 
 steps:
 - script: echo Hello, world!
