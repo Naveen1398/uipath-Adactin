@@ -1,7 +1,9 @@
 trigger:
   - main
 
-pool: Default
+
+pool:
+  vmImage: windows-latest
 
 stages:
   - stage: Build
