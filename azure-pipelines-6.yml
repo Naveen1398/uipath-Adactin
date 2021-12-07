@@ -22,4 +22,4 @@ steps:
     folderName: 'Naveen'
     jobType: 'TestAutomation'
     user: 'txchd-lap-191\naveen rana'
-    machine: 'TXCHD-LAP-191'
+    machine: 'txchd-lap-191'
